@@ -26,10 +26,10 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex">
         <Link to="/">
-          <li>Home</li>
+          <li>Acasă</li>
         </Link>
         <Link to="/cazari">
-          <li>Cazari</li>
+          <li>Cazări</li>
         </Link>
         <Link to="/restaurante">
           <li>Restaurante</li>

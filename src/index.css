@@ -9,42 +9,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.icon{
+.icon {
     color: var(--primary-dark)
 }
 
 .card-zoom {
     @apply relative flex items-center justify-between mx-auto overflow-hidden shadow-xl w-[95%] h-60 border;
-  }
+}
 
-  .card-zoom-image {
+.card-zoom-image {
     @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
-  }
+}
 
-  .card-zoom:hover .card-zoom-image {
+.card-zoom:hover .card-zoom-image {
     @apply scale-110;
-  }
+}
 
 @layer base {
     li {
-        @apply p-4 
+        @apply p-4
     }
+
     h1 {
-        @apply text-3xl md:text-4xl font-bold
+        @apply text-4xl font-bold
     }
+
     h2 {
         @apply text-3xl font-bold
     }
+
     h3 {
         @apply text-xl
     }
-    p{
+
+    p {
         @apply font-[Poppins]
     }
-    {/*button {
+
+
+    /*button {
         @apply p-3 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white rounded-md
-    }*/}
-    .icon {
-        @apply text-2xl cursor-pointer
-    }
+    }*/
+}
+
+.icon {
+    @apply text-2xl cursor-pointer
 }
